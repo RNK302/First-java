@@ -6,9 +6,10 @@ public static void main(String args)
 Scanner sc = new scanner (System in);
 System.out.println("Enter value");
 int value=sc.nextInt();
-if(value/2==0)
+int age =value/2;
+if(age==0)
 {
- System.out.println("Value is prime no:"+value);
+ System.out.println("Value is prime no:"+age);
 }
 else
 {
