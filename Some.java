@@ -1,19 +1,27 @@
-import java.util.*
-class some
-  {
-public static void main(String args)
+import java.util.*;
+class Some
 {
-Scanner sc = new scanner (System in);
-System.out.println("Enter value");
+public static void main (String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter value");
 int value=sc.nextInt();
-int age =value/2;
-if(age==0)
+Boolean prime=true;
+for(i=2;i<=value/2;i++)
 {
- System.out.println("Value is prime no:"+age);
+if(value%i==0)
+{
+prime=false;
+break;
+}
+}
+if(prime)
+{
+System.out.println("prime number:"+value);
 }
 else
 {
-System.out.println("value is not prime no");
+System.out.println("Is not prime no");
 }
 sc.close();
 }
